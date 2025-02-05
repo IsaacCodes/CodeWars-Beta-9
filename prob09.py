@@ -2,7 +2,7 @@ import os
 from datetime import datetime
 
 with open("input.txt") as f:
-    txt = f.read()
+    txt = f.read().strip()
     signal, start, end = txt.split("\n")
 
 start_time = datetime.strptime(start, "%Y-%m-%d")
